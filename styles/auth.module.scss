@@ -1,0 +1,77 @@
+.app {
+  display: grid;
+  height: 100vh;
+
+  // max-height: 100vh;
+  overflow: hidden;
+  grid-template-columns: 23rem 1fr;
+  grid-template-rows: 4rem 75% calc(25% - 4rem);
+
+  @media (max-width: 800px) {
+    grid-template-rows: 4rem 1fr;
+  }
+  @media (max-width: 370px) {
+    grid-template-columns: 1fr;
+  }
+  // grid-template-rows: 4rem 724px 1fr;
+  // grid-template-areas:
+  // "headerr headerr"
+  // "sidebar gallary"
+  // "sidebar steps"
+}
+
+.header {
+  grid-column: 1 / 3;
+  // grid-area: headerr;
+}
+
+.sidebar {
+  grid-column: 1;
+  grid-row: 2/4;
+  @media (max-width: 580px) {
+    grid-column: 1/-1;
+  }
+  // grid-area: sidebar;
+  background: rgb(207, 100, 100);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(207, 100, 100, 1) 13%,
+    rgba(255, 198, 198, 1) 89%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(207, 100, 100, 1) 13%,
+    rgba(255, 198, 198, 1) 89%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(207, 100, 100, 1) 13%,
+    rgba(255, 198, 198, 1) 89%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cf6464",endColorstr="#ffc6c6",GradientType=1);
+}
+
+.gallery {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  // grid-area: gallary;
+  background-color: #eef3f4;
+  @media (max-width: 580px) {
+    display: none;
+  }
+}
+
+.steps {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  // grid-area: steps;
+  background-color: #e7edee;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  overflow-y: hidden;
+}
+
+.button {
+  background-color: black;
+}

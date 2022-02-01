@@ -1,0 +1,87 @@
+$color-black-light: rgb(44, 44, 44);
+.sidebar__intro {
+  padding: 48px 25px 35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  color: black;
+  &__heading1 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: black;
+    &__ustyle {
+      font-style: italic;
+      color: #d67979;
+      font-weight: 800;
+    }
+  }
+  &__text1 {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: $color-black-light;
+    &__ustyle {
+      text-decoration: underline;
+      color: #2b2b2b;
+    }
+  }
+  &__icons {
+    &__imgwrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    &__img {
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 50%;
+      border: 2px solid white;
+
+      &:not(:first-child) {
+        margin-left: -8px;
+      }
+    }
+    &__deals {
+      font-weight: 500;
+      font-size: 0.7rem;
+      white-space: nowrap;
+      padding-left: 0.5rem;
+      color: black;
+      margin-top: 0.1rem;
+    }
+    &__text {
+      font-size: 0.6rem;
+      color: $color-black-light;
+      padding-left: 0.7rem;
+    }
+  }
+  &__auth {
+    &__btn {
+      margin-top: 2rem;
+      border-radius: 0.3rem;
+      color: white;
+      background-color: black;
+      padding: 0.6rem 0;
+      font-size: 0.9rem;
+      display: block;
+      text-align: center;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 300ms;
+
+      &:hover,
+      &:focus {
+        background-color: rgb(27, 27, 27);
+      }
+    }
+    &__text {
+      color: $color-black-light;
+      text-align: center;
+      font-size: 0.87rem;
+      font-weight: 400;
+      margin-top: 0.4rem;
+      cursor: pointer;
+    }
+    &__link {
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.nav {
+  @media (min-width: 776px) {
+    display: flex;
+  }
+  padding: 1.5rem 2rem;
+  &__items {
+    @media (min-width: 776px) {
+      display: flex;
+      margin-left: auto;
+    }
+    &__item {
+      padding: 0 1rem;
+    }
+  }
+}
